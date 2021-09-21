@@ -3,14 +3,17 @@
     "description": "hexlet php-project-lvl1",
     "license": "MIT",
     "bin": [
-   	    "bin/brain-games"
+   	    "bin/brain-games",
+        "bin/brain-even"
     ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Even.php",
+            "src/Start-Game.php"
         ]
     },
     "authors": [
