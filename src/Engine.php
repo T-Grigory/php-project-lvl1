@@ -20,7 +20,7 @@ function run($data, $message)
         $question = $data[$i][0];
         $correct = $data[$i][1];
         line("Question: " . $question);
-        $answer = prompt("Your answer: ");
+        $answer = prompt("Your answer");
 
         if ($answer !== $correct) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correct);

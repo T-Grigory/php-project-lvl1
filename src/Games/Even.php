@@ -17,7 +17,7 @@ function start()
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {
         $randomNumber = mt_rand(1, 100);
-        $data[$i][] = $randomNumber;
+        $data[$i][] = (string) $randomNumber;
         $data[$i][] = isEven($randomNumber) ? 'yes' : 'no';
     }
     \Brain\Games\Engine\run($data, MESSAGE);
