@@ -13,6 +13,8 @@ function getRandomOperators(): string
     return OPERATORS[mt_rand(0, count(OPERATORS) - 1)];
 }
 
+
+
 function calculator($number1, $number2, $operator)
 {
     switch ($operator) {
@@ -22,6 +24,8 @@ function calculator($number1, $number2, $operator)
             return $number1 - $number2;
         case '*':
             return $number1 * $number2;
+        default:
+            return "Unknown operator: '{$operator}'!";
     }
 }
 
