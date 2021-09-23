@@ -4,7 +4,6 @@ namespace Brain\Games\Engine;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Games\Even\isEven;
 
 const ATTEMPTS = 3;
 
@@ -17,9 +16,9 @@ function run($data, $message)
     line($message);
 
     for ($i = 1; $i <= ATTEMPTS; $i++) {
-        $question = $data[$i][0];
-        $correct = $data[$i][1];
-        line("Question: " . $question);
+        $question = $data[$i]["question"];
+        $correct = $data[$i]["correctAnswer"];
+        line("Question: $question");
         $answer = prompt("Your answer");
 
         if ($answer !== $correct) {

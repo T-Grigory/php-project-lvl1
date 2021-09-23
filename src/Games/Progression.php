@@ -26,8 +26,8 @@ function start()
         $progression = getProgression($start, $step, PROGRESSION_LENGTH);
         $missingNumber = $progression[$positionOfTheMissingNumber];
         $progression[$positionOfTheMissingNumber] = '..';
-        $data[$i][] = implode(' ', $progression);
-        $data[$i][] = (string) $missingNumber;
+        $data[$i]['question'] = implode(' ', $progression);
+        $data[$i]['correctAnswer'] = (string) $missingNumber;
     }
     \Brain\Games\Engine\run($data, MESSAGE);
 }

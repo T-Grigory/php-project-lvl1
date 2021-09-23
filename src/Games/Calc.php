@@ -8,7 +8,7 @@ const OPERATORS = ['+', '-', '*'];
 const MESSAGE = 'Answer "yes" if the number is oven, otherwise answer "no".';
 
 
-function getRandomOperators(): string
+function getRandomOperator(): string
 {
     return OPERATORS[mt_rand(0, count(OPERATORS) - 1)];
 }
@@ -35,9 +35,9 @@ function start()
     for ($i = 1; $i <= ATTEMPTS; $i++) {
         $number1 = mt_rand(1, 100);
         $number2 = mt_rand(1, 100);
-        $operator = getRandomOperators();
-        $data[$i][] = "{$number1} {$operator} {$number2}";
-        $data[$i][] = (string) calculator($number1, $number2, $operator);
+        $operator = getRandomOperator();
+        $data[$i]["question"] = "{$number1} {$operator} {$number2}";
+        $data[$i]["correctAnswer"] = (string) calculator($number1, $number2, $operator);
     }
     \Brain\Games\Engine\run($data, MESSAGE);
 }

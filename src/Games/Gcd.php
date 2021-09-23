@@ -18,8 +18,8 @@ function start()
     for ($i = 1; $i <= ATTEMPTS; $i++) {
         $number1 = mt_rand(1, 100);
         $number2 = mt_rand(1, 100);
-        $data[$i][] = "{$number1} {$number2}";
-        $data[$i][] = (string) gcd($number1, $number2);
+        $data[$i]['question'] = "{$number1} {$number2}";
+        $data[$i]['correctAnswer'] = (string) gcd($number1, $number2);
     }
     \Brain\Games\Engine\run($data, MESSAGE);
 }

@@ -22,8 +22,8 @@ function start()
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {
         $randomNumber = mt_rand(1, 100);
-        $data[$i][] = (string) $randomNumber;
-        $data[$i][] = isPrime($randomNumber) ? 'yes' : 'no';
+        $data[$i]['question'] = (string) $randomNumber;
+        $data[$i]['correctAnswer'] = isPrime($randomNumber) ? 'yes' : 'no';
     }
     \Brain\Games\Engine\run($data, MESSAGE);
 }
