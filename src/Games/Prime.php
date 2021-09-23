@@ -6,7 +6,7 @@ use const Brain\Games\Engine\ATTEMPTS;
 
 const MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime($number): bool
+function isPrime(int $number): bool
 {
     for ($i = 2; $i < $number; $i++) {
         if ($number % $i === 0) {
@@ -17,7 +17,7 @@ function isPrime($number): bool
 }
 
 
-function start()
+function start(): void
 {
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {

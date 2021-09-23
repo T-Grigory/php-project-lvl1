@@ -12,7 +12,7 @@ function isEven(int $number): bool
 }
 
 
-function start()
+function start(): void
 {
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {

@@ -15,21 +15,25 @@ function getRandomOperator(): string
 
 
 
-function calculator($number1, $number2, $operator)
+function calculator(int $number1, int $number2, string $operator): int
 {
     switch ($operator) {
         case '+':
-            return $number1 + $number2;
+            $expression = $number1 + $number2;
+            break;
         case '-':
-            return $number1 - $number2;
+            $expression = $number1 - $number2;
+            break;
         case '*':
-            return $number1 * $number2;
+            $expression = $number1 * $number2;
+            break;
         default:
-            return "Unknown operator: '{$operator}'!";
+            $expression = 0;
     }
+    return $expression;
 }
 
-function start()
+function start(): void
 {
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {

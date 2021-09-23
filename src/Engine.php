@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const ATTEMPTS = 3;
 
-function run($data, $message)
+function run(array $data, string $message): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

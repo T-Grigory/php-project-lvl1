@@ -6,13 +6,13 @@ use CONST Brain\Games\Engine\ATTEMPTS;
 
 const MESSAGE = 'Find the greatest common divisor of given numbers.';
 
-function gcd($number1, $number2)
+function gcd(int $number1, int $number2): int
 {
     return $number2 === 0 ? $number1 : gcd($number2, $number1 % $number2);
 }
 
 
-function start()
+function start(): void
 {
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {

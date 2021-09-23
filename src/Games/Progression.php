@@ -7,7 +7,7 @@ use CONST Brain\Games\Engine\ATTEMPTS;
 const MESSAGE = 'What number is missing in the progression?';
 const PROGRESSION_LENGTH = 10;
 
-function getProgression($start, $step, $length): array
+function getProgression(int $start, int $step, int $length): array
 {
     $progression = [];
     for ($i = $start; $i < $start + $length * $step; $i += $step) {
@@ -16,7 +16,7 @@ function getProgression($start, $step, $length): array
     return $progression;
 }
 
-function start()
+function start(): void
 {
     $data = [];
     for ($i = 1; $i <= ATTEMPTS; $i++) {
