@@ -15,9 +15,7 @@ function getRandomOperator(): string
     return OPERATORS[mt_rand(0, count(OPERATORS) - 1)];
 }
 
-/**
- * @throws Exception
- */
+
 function calculator(int $number1, int $number2, string $operator): int
 {
     switch ($operator) {
@@ -44,11 +42,7 @@ function start(): void
         $number2 = mt_rand(1, 100);
         $operator = getRandomOperator();
         $data[$i]["question"] = "{$number1} {$operator} {$number2}";
-        try {
-            $data[$i]["correctAnswer"] = (string) calculator($number1, $number2, $operator);
-        } catch (Exception $error) {
-            echo $error->getMessage();
-        }
+        $data[$i]["correctAnswer"] = (string) calculator($number1, $number2, $operator);
     }
     \Brain\Games\Engine\run($data, MESSAGE);
 }
