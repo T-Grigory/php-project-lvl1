@@ -2,8 +2,6 @@
 
 namespace Brain\Games\Games\Calc;
 
-use Exception;
-
 use CONST Brain\Games\Engine\ATTEMPTS;
 
 const OPERATORS = ['+', '-', '*'];
@@ -20,18 +18,14 @@ function calculator(int $number1, int $number2, string $operator): int
 {
     switch ($operator) {
         case '+':
-            $expression = $number1 + $number2;
-            break;
+            return $number1 + $number2;
         case '-':
-            $expression = $number1 - $number2;
-            break;
+            return $number1 - $number2;
         case '*':
-            $expression = $number1 * $number2;
-            break;
+            return $number1 * $number2;
         default:
-            throw new Exception("Unknown operator: '{$operator}'!");
+            throw new \Exception("Unknown operator: '{$operator}'!");
     }
-    return $expression;
 }
 
 function start(): void
