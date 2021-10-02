@@ -3,7 +3,6 @@
 namespace Brain\Games\Games\Calc;
 
 use CONST Brain\Games\Engine\ATTEMPTS;
-use \Exception;
 
 const OPERATORS = ['+', '-', '*'];
 const MESSAGE = 'Answer "yes" if the number is oven, otherwise answer "no".';
@@ -25,7 +24,7 @@ function calculator(int $number1, int $number2, string $operator): int
         case '*':
             return $number1 * $number2;
         default:
-            throw new Exception("Unknown operator: '{$operator}'!");
+            throw new \Exception("Unknown operator: '{$operator}'!");
     }
 }
 
