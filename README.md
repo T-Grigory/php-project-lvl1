@@ -15,32 +15,32 @@
 #### the game asks you to answer the question, an even number or not.
 to start the game, enter the command: *make brain-even*
 
-[![brain-even](https://asciinema.org/a/9gElNpEb73i7FhIEDdshhdGT8.svg)](https://asciinema.org/a/9gElNpEb73i7FhIEDdshhdGT8)
+[![brain-even](https://asciinema.org/a/tcRW8ZgtXIvWe5JJO6ZLyxYYt.svg)](https://asciinema.org/a/tcRW8ZgtXIvWe5JJO6ZLyxYYt)
 
 ### brain-calc
 ***
 #### the game asks you to calculate the mathematical expression shown on the screen.
 to start the game, enter the command: *make brain-calc*
 
-[![brain-calc](https://asciinema.org/a/qoaubGSTLMViKeZbj8WZLeabe.svg)](https://asciinema.org/a/qoaubGSTLMViKeZbj8WZLeabe)
+[![brain-calc](https://asciinema.org/a/dmMcHRAAygFrNWppJ96IGAq3k.svg)](https://asciinema.org/a/dmMcHRAAygFrNWppJ96IGAq3k)
 
 ### brain-gcd
 ***
 #### the game displays two numbers and asks to calculate the greatest common divisor
 to start the game, enter the command: *make brain-gcd*
 
-[![brain-gcd](https://asciinema.org/a/SQGY63jfZrGF6mHdzsBvxKZXk.svg)](https://asciinema.org/a/SQGY63jfZrGF6mHdzsBvxKZXk)
+[![brain-gcd](https://asciinema.org/a/uNyyZEOa7jcC0QchfziLKNRPz.svg)](https://asciinema.org/a/uNyyZEOa7jcC0QchfziLKNRPz)
 
 ### brain-progression
 ***
 #### the game displays a sequence of arithmetic progression and asks to enter the missing number
 to start the game, enter the command: *make brain-progression*
 
-[![brain-progression](https://asciinema.org/a/PGPRIK6jhgyuHHqevpFwX2yR8.svg)](https://asciinema.org/a/PGPRIK6jhgyuHHqevpFwX2yR8)
+[![brain-progression](https://asciinema.org/a/PbMD6zG30NfZWayA2PD7Sk0GJ.svg)](https://asciinema.org/a/PbMD6zG30NfZWayA2PD7Sk0GJ)
 
 ### brain-prime
 ***
 #### the game shows a number and ask to answer is a prime number or not
 to start the game, enter the command: *make brain-prime*
 
-[![brain-prime](https://asciinema.org/a/BbXUvXd774anJk48JpYc67eil.svg)](https://asciinema.org/a/BbXUvXd774anJk48JpYc67eil)
+[![brain-prime](https://asciinema.org/a/qGVmG7w43PrB9r39Ses3FWwP4.svg)](https://asciinema.org/a/qGVmG7w43PrB9r39Ses3FWwP4)
